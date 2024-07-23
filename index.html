@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="#">
+        <div id="emailDiv">
+            <label for="emailAdd">email address</label>
+            <input id="emailAdd" type="email" autocomplete="off" minlength="8" required>
+            <span class="error"></span>
+        </div> 
+        <div id="countryDiv">
+            <label for="country">country</label>
+            <select id="country">
+                <option value="id">Indonesia</option>
+                <option value="jp">Japan</option>
+                <option value="kr">Korea</option>
+                <option value="my">Malaysia</option>
+                <option value="ph">Philippines</option>
+                <option value="th">Thailand</option>
+                <option value="vn">Vietnam</option>
+            </select>
+            <span class="error"></span>
+        </div>
+        <div id="zipcodeDiv">
+            <label for="zipcode">zipcode</label>
+            <input id="zipcode" type="text">
+            <span class="error"></span>
+        </div>
+        <div id="passwordDiv">
+            <label for="password">password</label>
+            <input id="password" type="password" minlength="6" required>
+            <span class="error"></span>
+        </div>
+        <div id="confirmpasswordDiv">
+            <label for="confirmPass">confirm password</label>
+            <input id="confirmPass" type="password" required>
+            <span class="error"></span>
+        </div>
+        <button id="submitBtn">submit</button>
+    </form>
+
+<script src="index.js"></script>
+</body>
+</html>

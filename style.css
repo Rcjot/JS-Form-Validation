@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+form {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+input, select {
+    width: 200px;
+    outline: none;
+}
+
+button {
+    width: 100px;
+}
+
+
+/* 
+.error.active{
+    display: none;
+} */
